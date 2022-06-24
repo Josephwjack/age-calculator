@@ -37,8 +37,8 @@ describe('SolarCalculator', () => {
     expect(calc.jupiterLifeCalc()).toEqual(4)
   }); // test 9 passed
   test('it should list always list a positive integer even if the age is over life expectancy', () => {
-    let jupiterYearsLeft = 4;
-    expect(jupiterYearsLeft).toEqual(4)
+    let jupiterYearsLeft = -4
+    expect(jupiterYearsLeft * -1).toEqual(4)
   });
   
 })

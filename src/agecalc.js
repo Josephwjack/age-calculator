@@ -47,10 +47,6 @@ export class SolarCalculator {
   jupiterLifeCalc() {
     let jupiterLifeExp = (this.lifeExpectancy/11.86)
     let jupiterYearsLeft = Math.floor(jupiterLifeExp -(this.age/11.86))
-    if(jupiterYearsLeft <= 0){
-    return jupiterYearsLeft * -1
-    } else {
-    return jupiterYearsLeft;
-   }
+      return jupiterYearsLeft;
   }
 }
