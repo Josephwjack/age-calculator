@@ -40,5 +40,10 @@ export class SolarCalculator {
     let venusYearsLeft = Math.floor(venusLifeExp -(this.age/.62))
     return venusYearsLeft;
   }
+  marsLifeCalc() {
+    let marsLifeExp = (this.lifeExpectancy/1.88)
+    let marsYearsLeft = Math.floor(marsLifeExp -(this.age/1.88))
+    return marsYearsLeft;
+  }
 
 }
