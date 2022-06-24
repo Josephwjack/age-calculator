@@ -7,6 +7,10 @@ describe('SolarCalculator', () => {
   });
 
   test('should correctly return new object with users age', () => {
-    expect(newCalc.Earthage).toEqual(28);
-  })
+    expect(newCalc.age).toEqual(28);
+  }); //test#1 passed
+
+  
+
+
 })
