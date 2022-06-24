@@ -30,5 +30,8 @@ describe('SolarCalculator', () => {
   test('should return how many solar years a user has left to live on venus', () => {
     expect(calc.venusLifeCalc()).toEqual(91)
   });
+  test('should return how many solar years a user has left to live on mars', () => {
+    expect(calc.marsLifeCalc()).toEqual(30)
+  });
   
 })
