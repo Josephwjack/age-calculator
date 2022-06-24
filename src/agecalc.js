@@ -1,7 +1,9 @@
 export class SolarCalculator {
-  constructor(age) {
+  constructor(age, lifeExpectancy) {
+    this.lifeExpectancy = lifeExpectancy;
     this.age = age;
-  }
+  } 
+  
 
   mercCalc() {
     let merc = (this.age / .24);
@@ -17,16 +19,21 @@ export class SolarCalculator {
     return venusAge;
   }
   marsCalc() {
-    let mars = (this.age * 1.88);
+    let mars = (this.age / 1.88);
     let marsAge = [];
     marsAge = Math.floor(mars)
     return marsAge;
   }
   jupiterCalc() {
-    let jupiter = (this.age * 11.86);
+    let jupiter = (this.age / 11.86);
     let jupiterAge = [];
     jupiterAge = Math.floor(jupiter)
     return jupiterAge;
   }
-}
+  mercLifeCalc() {
+    let mercLifeExp = (this.lifeExpectancy/.24)
+    let yearsLeft = Math.floor(mercLifeExp -(this.age/.24))
+    return yearsLeft;
+  }
   
+}

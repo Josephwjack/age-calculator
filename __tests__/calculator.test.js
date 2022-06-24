@@ -2,8 +2,9 @@ import { SolarCalculator } from './../src/agecalc.js';
 
 describe('SolarCalculator', () => {
   let calc;
+  let yearsLeft;
   beforeEach(() => {
-    calc = new SolarCalculator(28);
+    calc = new SolarCalculator(28, 85);
   });
 
   test('should correctly return new object with users age', () => {
@@ -18,10 +19,13 @@ describe('SolarCalculator', () => {
     expect(calc.venusCalc()).toEqual(45)
   }); // test 3 passed
   test('should correctly return persons age in mars years', () => {
-    expect(calc.marsCalc()).toEqual(52)
+    expect(calc.marsCalc()).toEqual(14)
   }); //test 4 passed
   test('should correctly return persons age in jupiter years', () => {
-    expect(calc.jupiterCalc()).toEqual(332)
+    expect(calc.jupiterCalc()).toEqual(2)
+  }); //test 5 passed
+  test('should return how many solar years a user has left to live on mercury', () => {
+    expect(calc.mercLifeCalc()).toEqual(237)
   });
-
+  
 })
