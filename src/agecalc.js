@@ -22,5 +22,11 @@ export class SolarCalculator {
     marsAge = Math.floor(mars)
     return marsAge;
   }
+  jupiterCalc() {
+    let jupiter = (this.age * 11.86);
+    let jupiterAge = [];
+    jupiterAge = Math.floor(jupiter)
+    return jupiterAge;
+  }
 }
   

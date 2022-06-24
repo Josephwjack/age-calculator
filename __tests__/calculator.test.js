@@ -19,6 +19,9 @@ describe('SolarCalculator', () => {
   }); // test 3 passed
   test('should correctly return persons age in mars years', () => {
     expect(calc.marsCalc()).toEqual(52)
-  })
+  }); //test 4 passed
+  test('should correctly return persons age in jupiter years', () => {
+    expect(calc.jupiterCalc()).toEqual(332)
+  });
 
 })
