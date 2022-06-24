@@ -3,11 +3,11 @@ export class SolarCalculator {
     this.lifeExpectancy = lifeExpectancy;
     this.age = age;
   } 
-  
+  yearsLeft = [];
 
   mercCalc() {
     let merc = (this.age / .24);
-    let mercuryAge = [];
+    let mercuryAge;
     mercuryAge = Math.floor(merc)
       return mercuryAge;
   } 
@@ -42,8 +42,17 @@ export class SolarCalculator {
   }
   marsLifeCalc() {
     let marsLifeExp = (this.lifeExpectancy/1.88)
-    let marsYearsLeft = Math.floor(marsLifeExp -(this.age/1.88))
-    return marsYearsLeft;
+    let yearsLeft = Math.floor(marsLifeExp -(this.age/1.88))
+    return yearsLeft;
   }
+  jupiterLifeCalc() {
+    let jupiterLifeExp = (this.lifeExpectancy/11.86)
+    let yearsLeft = Math.floor(jupiterLifeExp -(this.age/11.86))
+    if(yearsLeft <= 0) {
+    return (yearsLeft * -1)
+    } else {
+    return yearsLeft;
+    }
 
+  }
 }

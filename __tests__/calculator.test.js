@@ -2,7 +2,7 @@ import { SolarCalculator } from './../src/agecalc.js';
 
 describe('SolarCalculator', () => {
   let calc;
-  let yearsLeft;
+  
   beforeEach(() => {
     calc = new SolarCalculator(28, 85);
   });
@@ -35,6 +35,9 @@ describe('SolarCalculator', () => {
   }); // test 8 passed
   test('should return how many solar years a user has left to live on jupiter', () => {
     expect(calc.jupiterLifeCalc()).toEqual(4)
+  }); // test 9 passed
+  test('should return years past the life expectancy with a positive integer', () => {
+  let yearsLeft = -4;
+  expect(calc.jupiterLifeCalc(yearsLeft)).toBe(4)
   });
-  
 })
