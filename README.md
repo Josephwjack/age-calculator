@@ -1,29 +1,24 @@
-# (Application Name)
+# Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### Calculator for planet solar years. Week 5 independant project at Epicodus.
 
 #### By (Joseph Jack)  [GitHub Pages link]
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _JavaScript & JQuery_
+* _Jest_
+* _VS Code_
+* _HTML_
 
 ## Description
-_This repository allows you to pull the files for use in your own project, including (_ tests _/.., src/.., .babelrc, .eslintrc, .gitignore, package-lock.json, package.json, webpack.config.js)_ 
+_This application determines the user's age and returns their age based on planet's solar years. _ 
 ## Setup/Installation Requirements
 
-1. Fork this repository to your github account.
+1. Git clone code to your local terminal or visit GH pages link.
 2. Copy it from your github to your machine
-3. Rename files ("__ tests __/app-name.test.js" and "src/app-name.js") to match your project.
-4. Be sure to update the git repository and remote repository you are committing to.
-* check origin git remote -v
-* if origin is not your repository, set origin to your repository git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-5. Update the author and project name in both package.json and webpack.config.js
-6. Install packages run $ npm install
-7. Prepare repository to deploy run $ npm build
+3. Install packages run $ npm install
+4. Prepare repository to deploy run $ npm build
 
 ## Logic/Specs
 
