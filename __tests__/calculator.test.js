@@ -16,7 +16,9 @@ describe('SolarCalculator', () => {
 
   test('should correctly return persons age in venus years', () => {
     expect(calc.venusCalc()).toEqual(45)
+  }); // test 3 passed
+  test('should correctly return persons age in mars years', () => {
+    expect(calc.marsCalc()).toEqual(52)
   })
-
 
 })
