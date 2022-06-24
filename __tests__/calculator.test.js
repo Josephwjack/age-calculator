@@ -1,16 +1,18 @@
 import { SolarCalculator } from './../src/agecalc.js';
 
 describe('SolarCalculator', () => {
-  let newCalc;
+  let calc;
   beforeEach(() => {
-    newCalc = new SolarCalculator(28);
+    calc = new SolarCalculator(28);
   });
 
   test('should correctly return new object with users age', () => {
-    expect(newCalc.age).toEqual(28);
+    expect(calc.age).toEqual(28);
   }); //test#1 passed
 
-  
+  test('should correctly return persons age in mercury years', () => {
+    expect(calc.mercCalc()).toEqual(116);
+  })
 
 
 })
